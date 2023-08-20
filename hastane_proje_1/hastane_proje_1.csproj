@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC98B95C-2AB6-44FF-9087-57D70DD8251C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hastane_proje_1</RootNamespace>
+    <AssemblyName>hastane_proje_1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOCTOR\FrmDoctorInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOCTOR\FrmDoctorInfoEdit.Designer.cs">
+      <DependentUpon>FrmDoctorInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOCTOR\FrmDoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOCTOR\FrmDoctorDetails.Designer.cs">
+      <DependentUpon>FrmDoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOCTOR\FrmDoctorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOCTOR\FrmDoctorLogin.Designer.cs">
+      <DependentUpon>FrmDoctorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins.Designer.cs">
+      <DependentUpon>FrmLogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotices.Designer.cs">
+      <DependentUpon>FrmNotices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicalProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PATİENT\FrmPatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PATİENT\FrmPatientDetail.Designer.cs">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PATİENT\FrmPatientEditİnfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PATİENT\FrmPatientEditİnfo.Designer.cs">
+      <DependentUpon>FrmPatientEditİnfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PATİENT\FrmPatientLogincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PATİENT\FrmPatientLogincs.Designer.cs">
+      <DependentUpon>FrmPatientLogincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PATİENT\PatientSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PATİENT\PatientSignUp.Designer.cs">
+      <DependentUpon>PatientSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SECRETARY\FrmAppoinmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECRETARY\FrmAppoinmentList.Designer.cs">
+      <DependentUpon>FrmAppoinmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SECRETARY\FrmBranchPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECRETARY\FrmBranchPanel.Designer.cs">
+      <DependentUpon>FrmBranchPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SECRETARY\FrmDoctorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECRETARY\FrmDoctorPanel.Designer.cs">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SECRETARY\FrmSecretaryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECRETARY\FrmSecretaryDetails.Designer.cs">
+      <DependentUpon>FrmSecretaryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SECRETARY\FrmSecretaryLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECRETARY\FrmSecretaryLogin.Designer.cs">
+      <DependentUpon>FrmSecretaryLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlConnection.cs" />
+    <EmbeddedResource Include="DOCTOR\FrmDoctorInfoEdit.resx">
+      <DependentUpon>FrmDoctorInfoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOCTOR\FrmDoctorDetails.resx">
+      <DependentUpon>FrmDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOCTOR\FrmDoctorLogin.resx">
+      <DependentUpon>FrmDoctorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins.resx">
+      <DependentUpon>FrmLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotices.resx">
+      <DependentUpon>FrmNotices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PATİENT\FrmPatientDetail.resx">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PATİENT\FrmPatientEditİnfo.resx">
+      <DependentUpon>FrmPatientEditİnfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PATİENT\FrmPatientLogincs.resx">
+      <DependentUpon>FrmPatientLogincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PATİENT\PatientSignUp.resx">
+      <DependentUpon>PatientSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SECRETARY\FrmAppoinmentList.resx">
+      <DependentUpon>FrmAppoinmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SECRETARY\FrmBranchPanel.resx">
+      <DependentUpon>FrmBranchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SECRETARY\FrmDoctorPanel.resx">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SECRETARY\FrmSecretaryDetails.resx">
+      <DependentUpon>FrmSecretaryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SECRETARY\FrmSecretaryLogin.resx">
+      <DependentUpon>FrmSecretaryLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MedicalProjectDataSet.xsc">
+      <DependentUpon>MedicalProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MedicalProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MedicalProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MedicalProjectDataSet.xss">
+      <DependentUpon>MedicalProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
